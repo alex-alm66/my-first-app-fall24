@@ -20,6 +20,8 @@ Install packages:
 pip install -r requirements.txt
 ```
 
+TODO: [Obtain a SendGrid API Key] ..... FINISH
+
 [Obtain an API Key](https://www.alphavantage.co/support/#api-key) from AlphaVantage.
 
 Create a ".env" file and add contents like the following (using your own AlphaVantage API Key):
@@ -50,3 +52,4 @@ Run the stocks report:
 ```sh
 python app/stocks.py
 ```
+
