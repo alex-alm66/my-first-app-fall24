@@ -21,11 +21,12 @@ pip install -r requirements.txt
 ```
 
 Obtaining API Keys from Alphavantage and SendGrid:
+
 [Obtain an API Key](https://www.alphavantage.co/support/#api-key) from AlphaVantage by filling out the form at the aforementioned link.
 
 Sign up for a [SendGrid account](https://login.twilio.com/u/signup?state=hKFo2SBncmVNMFZvcEZTNV9Yd3R0d2hVZVNUaEt4RlRVSnBqZaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDVVd053ci1iZVFJWjFTSllMNkVQOVpRdWg3ZlVWcGdFo2NpZNkgR244UWMyZ1FOa2trZ0llT2s4QlJqRWZ5eWNoMTU2VUk) and click the verification link sent to your email address. Then follow the instructions to complete your "Single Sender Verification", and click the verification link sent in another confirmation email to verify your single sender address (i.e. the ```SENDGRID_SENDER_ADDRESS```). You should be able to access these settings via the "Sender Authentication" section of the settings menu. Lastly, [create a SendGrid API Key](https://app.sendgrid.com/settings/api_keys) with "full access" permissions (i.e. the ```SENDGRID_API_KEY```). You should be able to access these settings via the "API Keys" section of the settings menu.
 
-Then, create your own ".env" file in your repository folder and add the following contents (your own AlphaVantage API Key, SendGrid single sender address and API Key):
+Next, create your own ".env" file in your repository folder and add the following contents (your own AlphaVantage API Key, SendGrid single sender address and API Key):
 
 ```sh
 # this is the ".env" file:
