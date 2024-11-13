@@ -73,3 +73,11 @@ Run the example rock, paper, scissors game:
 ```
 python app/rps.py
 ```
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
+```
