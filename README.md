@@ -55,7 +55,7 @@ python app/unemployment.py
 Run the stocks report:
 
 ```sh
-python app/stocks.py
+python -m app.stocks
 ```
 
 Run the example email sending file:
@@ -66,7 +66,7 @@ python app/email_service.py
 Run the stocks report:
 
 ```sh
-python app/stocks.py
+python -m app.stocks
 ```
 
 Run the example rock, paper, scissors game:
