@@ -10,7 +10,6 @@ from plotly.express import line
 
 from app.alpha_service import API_KEY
 
-
 def fetch_unemployment_json():
 
     request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
@@ -37,7 +36,6 @@ def fetch_unemployment_json():
         item["value"] = float(item["value"])
 
     return data
-
 
 
 if __name__ == "__main__":
