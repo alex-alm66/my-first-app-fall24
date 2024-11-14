@@ -39,17 +39,13 @@ SENDGRID_SENDER_ADDRESS="______"
 ## Usage
 
 Run the example script:
-
 ```sh
 python app/my_script.py
 ```
 
 Run the unemployment report:
-
 ```sh
-#ALPHAVANTAGE_API_KEY="..." python app/unemployment.py
-
-python app/unemployment.py
+python -m app.unemployment
 ```
 
 Run the stocks report:
@@ -59,18 +55,12 @@ python -m app.stocks
 ```
 
 Run the example email sending file:
-```
-python app/email_service.py
-```
-
-Run the stocks report:
-
 ```sh
-python -m app.stocks
+python -m email_service
 ```
 
 Run the example rock, paper, scissors game:
-```
+```sh
 python app/rps.py
 ```
 
