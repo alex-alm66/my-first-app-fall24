@@ -2,6 +2,7 @@
 
 # LOCAL DEV (ENV VARS)
 
+import json
 from statistics import mean
 
 import requests
