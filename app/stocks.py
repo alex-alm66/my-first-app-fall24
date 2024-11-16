@@ -81,5 +81,6 @@ if __name__ == "__main__":
 
     latest_price = format_usd(first_row['adjusted_close'])
 
-    send_email_with_sendgrid(subject="Stocks report", 
+    rec_add = input("Enter an email to receive the stocks report:")
+    send_email_with_sendgrid(recipient_address=rec_add, subject="Stocks report", 
         html_content=f"Latest price for {symbol} is {latest_price}")

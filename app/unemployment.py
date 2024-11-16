@@ -88,5 +88,6 @@ if __name__ == "__main__":
 
     latest_unemployment = f"{data[0]['value']}%"
 
-    send_email_with_sendgrid(subject="Unemployment report", 
+    rec_add = input("Enter an email to receive the unemployment report:")
+    send_email_with_sendgrid(recipient_address=rec_add,subject="Unemployment report", 
         html_content=f"Latest unemployment rate is {latest_unemployment}")
