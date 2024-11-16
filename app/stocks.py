@@ -7,6 +7,7 @@ from plotly.express import line
 
 
 from app.alpha_service import API_KEY
+from app.email_service import send_email_with_sendgrid
 
 # DEFINE FUNCTIONS
 
@@ -75,3 +76,10 @@ if __name__ == "__main__":
                 title=f"Stock Prices ({symbol})",
             labels= {"x": "Date", "y": "Stock Price ($)"})
     fig.show()
+
+    # SEND EMAIL
+
+    latest_price = format_usd(first_row['adjusted_close'])
+
+    send_email_with_sendgrid(subject="Stocks report", 
+        html_content=f"Latest price for {symbol} is {latest_price}")
