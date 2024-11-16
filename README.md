@@ -56,7 +56,7 @@ python -m app.stocks
 
 Run the example email sending file:
 ```sh
-python -m email_service
+python -m app.email_service
 ```
 
 Run the example rock, paper, scissors game:
