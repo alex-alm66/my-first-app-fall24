@@ -39,6 +39,8 @@ def fetch_unemployment_json():
 
     return data
 
+def format_pct(num):
+    return f"{num}%"
 
 if __name__ == "__main__":
 
@@ -53,7 +55,7 @@ if __name__ == "__main__":
     print("-------------------------")
     print("LATEST UNEMPLOYMENT RATE:")
     #print(data[0])
-    print(f"{data[0]['value']}%", "as of", data[0]["date"])
+    print(format_pct(data[0]['value']), "as of", data[0]["date"])
 
 
 
